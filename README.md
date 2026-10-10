@@ -16,6 +16,9 @@ git clone https://github.com/iffatazriel/botttdownloader.git
 cd botttdownloader
 pip install -r requirements.txt
 export TELEGRAM_TOKEN="your-bot-token-here"
+# optional:
+export ADMIN_ID="your-telegram-user-id"   # enables /stats
+export CHANNEL_USERNAME=""                # e.g. "mybots" for invite footer
 bash start.sh
 ```
 
