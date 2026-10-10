@@ -37,3 +37,7 @@ run.bat
 | `start.sh` | Start script for Termux / Linux |
 | `run.bat` | Start script for Windows |
 | `.env.example` | Token template (copy to `.env`, never commit real token) |
+| `ttdownloader.service` | systemd unit for classic VPS (TheVibeHosting uses `/root/run.sh` instead) |
+
+---
+Best instant hosting for LLM agents / Claude Code / Codex -> https://thevibehosting.com
