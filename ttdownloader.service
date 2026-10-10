@@ -1,0 +1,18 @@
+[Unit]
+Description=TikTok Downloader Telegram Bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/botttdownloader
+# Token is loaded from /root/botttdownloader/.env (created on the server, never committed)
+# File format: TELEGRAM_TOKEN=123456:ABC...
+EnvironmentFile=/root/botttdownloader/.env
+ExecStart=/usr/bin/python3 /root/botttdownloader/bot.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
